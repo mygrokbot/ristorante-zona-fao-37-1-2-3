@@ -1,50 +1,64 @@
-/** Small settore → palette map. Unknown settori fall back to navy. */
+/** Settore palette. Trade theme forces navy + orange. */
 export const PALETTES = {
   Veterinaria: {
-    accent: '#0f766e',
-    accentHover: '#115e59',
-    accentSoft: '#ccfbf1',
-    ink: '#134e4a',
+    accent: '#f27427',
+    accentHover: '#d65f16',
+    accentSoft: '#ffe8d6',
+    ink: '#0b192e',
   },
   Gelateria: {
-    accent: '#c2410c',
-    accentHover: '#9a3412',
-    accentSoft: '#ffedd5',
-    ink: '#7c2d12',
+    accent: '#0f766e',
+    accentHover: '#0b5c56',
+    accentSoft: '#d7f3ee',
+    ink: '#111111',
   },
   Ristorazione: {
-    accent: '#9f1239',
-    accentHover: '#881337',
-    accentSoft: '#ffe4e6',
-    ink: '#4c0519',
+    accent: '#0f766e',
+    accentHover: '#0b5c56',
+    accentSoft: '#d7f3ee',
+    ink: '#111111',
   },
   Pasticceria: {
-    accent: '#b45309',
-    accentHover: '#92400e',
-    accentSoft: '#fef3c7',
-    ink: '#78350f',
+    accent: '#0f766e',
+    accentHover: '#0b5c56',
+    accentSoft: '#d7f3ee',
+    ink: '#111111',
   },
   'Pub e birreria': {
-    accent: '#92400e',
-    accentHover: '#78350f',
-    accentSoft: '#fde68a',
-    ink: '#451a03',
+    accent: '#f27427',
+    accentHover: '#d65f16',
+    accentSoft: '#ffe8d6',
+    ink: '#0b192e',
+  },
+  'Bar e caffetteria': {
+    accent: '#f27427',
+    accentHover: '#d65f16',
+    accentSoft: '#ffe8d6',
+    ink: '#0b192e',
   },
   Servizi: {
-    accent: '#1e3a5f',
-    accentHover: '#152a45',
-    accentSoft: '#e8eef5',
-    ink: '#0f172a',
+    accent: '#0f766e',
+    accentHover: '#0b5c56',
+    accentSoft: '#d7f3ee',
+    ink: '#111111',
   },
 }
 
 const FALLBACK = {
-  accent: '#1e3a5f',
-  accentHover: '#152a45',
-  accentSoft: '#e8eef5',
-  ink: '#0f172a',
+  accent: '#0f766e',
+  accentHover: '#0b5c56',
+  accentSoft: '#d7f3ee',
+  ink: '#111111',
 }
 
-export function paletteFor(settore) {
+export const TRADE = {
+  accent: '#f27427',
+  accentHover: '#d65f16',
+  accentSoft: '#ffe8d6',
+  ink: '#0b192e',
+}
+
+export function paletteFor(settore, theme) {
+  if (theme === 'trade') return TRADE
   return PALETTES[settore] || FALLBACK
 }
