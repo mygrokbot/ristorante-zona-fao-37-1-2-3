@@ -1,0 +1,18 @@
+{
+  "priorita": "3",
+  "nome": "ristorante ZONA FAO 37 .1.2.3.",
+  "settore": "Ristorazione",
+  "categoria": "Ristorante",
+  "indirizzo": "Via Umberto I, 58",
+  "cap": "72020",
+  "citta": "Torchiarolo",
+  "provincia": "BR",
+  "telefono": "+39 347 390 0626",
+  "canale": "WhatsApp",
+  "rating": "4.7",
+  "recensioni": "663",
+  "top300": "SI",
+  "maps": "https://www.google.com/maps/search/?api=1&query=ristorante%20ZONA%20FAO%2037%20.1.2.3.&query_place_id=ChIJWQ7cEqsqRBMR8iqJSPvIi6U",
+  "slug": "ristorante-zona-fao-37-1-2-3",
+  "subdomain": "ristorante-zona-fao-37-1-2-3.divalore.studio"
+}
